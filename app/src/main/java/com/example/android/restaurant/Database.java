@@ -3,7 +3,7 @@ package com.example.android.restaurant;
 import android.provider.BaseColumns;
 
 public class Database  {
-    public static final int VERSION = 1;
+    public static final int VERSION = 2;
     public static final String DATABASE ="user.db";
     class UserInfo implements BaseColumns {
         public static final String TABLE = "users";
@@ -16,7 +16,7 @@ public class Database  {
 
         public static final String DROP_TABLE = " DROP TABLE IF EXISTS " + TABLE;
 
-        public static final String DUMMY = " INSERT INTO " + TABLE + " (" + NAME + "," + PAEEWORD + ")  VALUES " +
+        public static final String DUMMY = " INSERT INTO " + TABLE + " (" + NAME + "," + PAEEWORD + "," + TYPE +")  VALUES " +
                 "('ahmed ','500a',1), " +
                 "( 'ali','an45',0), " +
                 "( 'maged','jdj56',2) ";
